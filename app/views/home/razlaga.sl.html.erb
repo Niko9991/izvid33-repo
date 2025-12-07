@@ -1,0 +1,34 @@
+
+<h1>Urejanje izvidov, dobavitelji: <%=current_user.name%></h1>
+<h2>Pozdrav</h2>
+<p> Pripomoček za spremljanje izvidov</p>
+<p>
+V tem programu urejamo dokumente (izvide, izjave) posameznega dobavitelja.
+Ločeno je vnašanje domačih in tujih dobaviteljev. Izbiramo z e-mailom za začetek.
+»domaci« oz. »tuji«. 
+Katere dobavitelje urejamo lahko vedno preverite na zavihku «Domov«.</p>
+<p>
+<strong>Dobavitelje</strong> izberemo v zavihku "Dobavitelj", za iskalni niz vpišemo del imena dobavitelja. Med prikazanimi izberemo dobavitelja. Na dnu je povezava za vpis novega dobavitelja.</p>
+<p>
+V preglednici lahko izberemo "Dokumenti" ali "Izberi".
+"Dokumenti" omogoči pregled obstoječih in dodajanje novih dokumentov (izvidov) za tega dobavitelja.
+"Izberi" omogoča urejanje podatkov in dokumentov za izbranega dobavitelja.</p>
+<p>Pri dodajanju <strong>novih dokumentov</strong> v tabelo vpišemo lokacijo dokumenta. 
+Če bi vpisovali izvid z zaporedno številko 23, bi imeli dve možnosti:
+C:/direktorij (mapa) v računalniku Primer: C:/izvidi/23
+ali 
+Mapa (fascikel za dokumente v papirni obliki). Primer: Mapa Izvidi 2026/23</p>
+<p>Pomembno je, da vsak dokument označimo z zaporedno številko. Velja za obe obliki zapisov.
+V preglednici dokumentov le-te lahko urejamo in brišemo.  Izvid označimo s klikom v kvadratek "Labtest". V Dokumentu bo zapisano "true"</p>
+
+<p><strong>Poročila</strong> izberemo v zavihku "Porocila". Prikazano je število dobaviteljev in dokumentov za posameznega dobavitelja.</p>
+
+<p>V tem računalniku nimam čžš zato bo kakšna beseda čudna.</p>
+
+
+
+<%= link_to "Domov/zacetek", home_index_path, class: "button button2 text-xs"%>
+
+<%= button_to "Izpis/Sign Out", session_path, class: "button button1 text-sm", method: :delete if authenticated? %>
+
+<%#= current_user.id %>

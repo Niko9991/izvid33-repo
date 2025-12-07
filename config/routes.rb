@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
     get "home/index"
     get "home/razlaga"
+    get "home/razlaga/sl"
 
     resources :suppliers do
       resources :papers

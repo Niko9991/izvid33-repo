@@ -19,7 +19,10 @@ sl:
   user: Uporabnik
   Welcome: Pozdravljeni
 
-
+  actions:
+     Show: Pokazi
+     Edit: Uredi
+     
   activerecord:
 
     models:
