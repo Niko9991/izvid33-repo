@@ -1,0 +1,14 @@
+# Ignore SQLite databases
+/db/*.sqlite3
+/db/*.db
+
+# Ignore CSV imports (if you don’t want them in Git)
+/db/csv/*.csv
+
+# Ignore other standard Rails stuff
+/log/*
+/tmp/*
+/coverage/*
+/node_modules/
+/yarn-error.log
+.byebug_history

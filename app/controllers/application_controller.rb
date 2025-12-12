@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
 allow_browser versions: :modern
 
 helper_method :current_user, :authenticated?
-helper_method :polje
+
 
 around_action :switch_locale
 

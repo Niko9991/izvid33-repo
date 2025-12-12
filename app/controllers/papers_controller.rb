@@ -60,8 +60,8 @@ class PapersController < ApplicationController
   def paper_params
     params.require(:paper).permit(
       :year, :article, :group, :labtest, :location_labtest,
-      :certificate, :location_certificate, :comment,
-      :labtest_count, :certificate_count
+      :certificate, :location_certificate, :comment
+
     )
   end
 end
