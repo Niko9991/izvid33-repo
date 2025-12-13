@@ -53,6 +53,8 @@ class PapersController < ApplicationController
     @supplier = Supplier.find(params[:supplier_id])
   end
 
+
+
   def set_paper
     @paper = @supplier.papers.find(params[:id])
   end

@@ -18,7 +18,7 @@
   </thead>
   <tbody>
     <td><%= f.text_field :article %></td>
-    <td><%= f.number_field :year, placeholder:2026 %></td>
+    <td><%= f.number_field :year, value: f.object.year || Time.current.year %></td>
     <td><%= f.text_field :group %></td>
   </tbody>
 </table>

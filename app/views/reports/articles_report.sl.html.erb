@@ -13,6 +13,7 @@
   <tr>
     <th>Dobavitelj</th>
     <th>Artikel</th>
+    <th>Vpisan</th>
     <th>Kje je izvid</th>
     <th>Kje je certifikati</th>
   </tr>
@@ -21,6 +22,7 @@
     <tr>
       <td><%= paper.supplier.name %></td>
       <td><%= paper.article %></td>
+      <td><%= l(paper.created_at) %></td>
       <td><%= paper.location_labtest %></td>
       <td><%= paper.location_certificate %></td>
     </tr>
