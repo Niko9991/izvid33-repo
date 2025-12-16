@@ -6,35 +6,35 @@ class PapersControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should get index" do
-    get papers_url
+    get supplier_papers_url
     assert_response :success
   end
 
   test "should get new" do
-    get new_paper_url
+    get new_supplier_paper_url
     assert_response :success
   end
 
   test "should create paper" do
     assert_difference("Paper.count") do
-      post papers_url, params: { paper: { article: @paper.article, certificate: @paper.certificate, comment: @paper.comment, group: @paper.group, labtest: @paper.labtest, location_certificate: @paper.location_certificate, location_labtest: @paper.location_labtest, supplier_id: @paper.supplier_id, year: @paper.year } }
+      post supplier_papers_url, params: { paper: { article: @paper.article, certificate: @paper.certificate, comment: @paper.comment, group: @paper.group, labtest: @paper.labtest, location_certificate: @paper.location_certificate, location_labtest: @paper.location_labtest, supplier_id: @paper.supplier_id, year: @paper.year } }
     end
 
-    assert_redirected_to paper_url(Paper.last)
+    assert_redirected_to supplier_paper_url(Paper.last)
   end
 
   test "should show paper" do
-    get paper_url(@paper)
+    get supplier_paper_url(@paper)
     assert_response :success
   end
 
   test "should get edit" do
-    get edit_paper_url(@paper)
+    get edit_supplier_paper_url(@supplier, @paper)
     assert_response :success
   end
 
   test "should update paper" do
-    patch paper_url(@paper), params: { paper: { article: @paper.article, certificate: @paper.certificate, comment: @paper.comment, group: @paper.group, labtest: @paper.labtest, location_certificate: @paper.location_certificate, location_labtest: @paper.location_labtest, supplier_id: @paper.supplier_id, year: @paper.year } }
+    patch supplier_paper_url(@supplier, @paper), params: { paper: { article: @paper.article, certificate: @paper.certificate, comment: @paper.comment, group: @paper.group, labtest: @paper.labtest, location_certificate: @paper.location_certificate, location_labtest: @paper.location_labtest, supplier_id: @paper.supplier_id, year: @paper.year } }
     assert_redirected_to paper_url(@paper)
   end
 
