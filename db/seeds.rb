@@ -8,7 +8,7 @@
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
 User.create!(
-  email: "mare@ocene.si",
+  email_address: "mare@ocene.si",
   password: "123kop",
   password_confirmation: "123kop",
   name: "Mare"
