@@ -7,9 +7,19 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
-User.create!(
-  email_address: "mare@ocene.si",
-  password: "123kop",
-  password_confirmation: "123kop",
-  name: "Mare"
-)
+users = [
+  { email_address: "mark@ocene.si", password: "123kop", name: "Admin" },
+  { email_address: "lazo@ocene.si", password: "123kop", name: "Lazo" },
+  { email_address: "bulc@ocene.si", password: "456kop", name: "Zorica" }
+  { email_address: "zorica@bella.si", password: "123kop", name: "Zorica" }
+]
+
+users.each do |u|
+  User.find_or_create_by!(email_address: u[:email_address]) do |user|
+    user.password = u[:password]
+    user.password_confirmation = u[:password]
+    user.name = u[:name]
+  end
+end
+
+puts "Users seeded successfully."
