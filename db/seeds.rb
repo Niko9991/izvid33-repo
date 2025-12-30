@@ -10,7 +10,7 @@
 users = [
   { email_address: "mark@ocene.si", password: "123kop", name: "Admin" },
   { email_address: "lazo@ocene.si", password: "123kop", name: "Lazo" },
-  { email_address: "bulc@ocene.si", password: "456kop", name: "Zorica" }
+  { email_address: "bulc@ocene.si", password: "456kop", name: "BulcBratje" },
   { email_address: "zorica@bella.si", password: "123kop", name: "Zorica" }
 ]
 
