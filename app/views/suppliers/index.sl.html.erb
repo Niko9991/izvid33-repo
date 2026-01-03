@@ -5,6 +5,8 @@
 
 <h1>Dobavitelji, ureja: <%=current_user.name%></h1>
 <%#= t(:suppliers) %>
+<%= link_to "Nov dobavitelj", new_supplier_path, class: "button button1 text-sm" %>
+
 
 <%= form_with url: suppliers_path, method: :get, local: true do |form| %>
   <%= form.label :search, "Poisci dobavitelja:" %>
@@ -42,6 +44,4 @@
   <% end %>
   </table>
 </div>
-
-<%= link_to "Nov dobavitelj", new_supplier_path, class: "button button1 text-sm" %>
 

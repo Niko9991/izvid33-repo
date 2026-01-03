@@ -1,4 +1,6 @@
+<%= link_to "Nazaj v pregled dokumentov", supplier_papers_path(@supplier), class: "button" %>
+<br>
+
  <h1>Uredi dokument</h1>
 <%= render "form", supplier: @supplier, paper: @paper %>
 
-<%= link_to "Nazaj v dokumente", supplier_paper_path(@supplier, @paper), class: "button" %>

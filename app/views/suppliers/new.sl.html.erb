@@ -1,12 +1,11 @@
 <% content_for :title, "Nov dobavitelj" %>
-
+<div>
+  <%= link_to "Nazaj v seznam", suppliers_path %>
+</div>
+ 
 <h1>Nov dobavitelj</h1>
 
 <%= render "form", supplier: @supplier %>
 
 <br>
 <p>Dobavitelj vpisan</p>
-<div>
-  <%= link_to "Nazaj v seznam", suppliers_path %>
-</div>
- 
